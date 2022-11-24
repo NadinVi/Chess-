@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chess</title>
+	<script src="script.js"></script>
+	<style>
+		.chess {
+			border-collapse: collapse;
+		}
+
+		.chess td {
+			width: 30px;
+			height: 30px;
+			border: 1px solid black;
+			padding: 0;
+			text-align: center;
+		}
+
+		.chess tr:nth-child(2n) td:nth-child(2n-1){
+			background: gray;
+		}
+
+		.chess tr:nth-child(2n-1) td:nth-child(2n){
+			background: gray;
+		}
+
+		.chess tr:first-of-type td, .chess tr:last-of-type td{
+			background: transparent!important;
+		}
+
+		.chess td:first-of-type, .chess td:last-of-type{
+			background: transparent!important;
+		}
+		
+	</style>
+</head>
+
+<body>
+</body>
+
+</html>
